@@ -1,5 +1,7 @@
 #!/bin/sh
 
+hyprlandOriginal="/usr/bin/hyprland-original"
+
 # Tests if the card is NVIDIA, if so, uses the value of the variables
 lspci | grep -qi "vga.*nvidia" && {
   export GSK_RENDERER=ngl
