@@ -79,3 +79,6 @@ if [ -e /usr/bin/startbiglive ]; then
    # Updates user directories
    LANG=$LANG xdg-user-dirs-update --force
 fi
+
+# Run the original Hyprland
+exec "$hyprlandOriginal" "$@"
