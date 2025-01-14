@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Path to the wallpaper
-WALLPAPER="/usr/share/backgrounds/community/animal-hpr-001.jpg"
+WALLPAPER="/usr/share/backgrounds/community/animal-hpr-001.avif"
 
 # Check if the wallpaper file exists
 if [ ! -f "$WALLPAPER" ]; then
