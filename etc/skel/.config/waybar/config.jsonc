@@ -66,22 +66,22 @@
     //    "tooltip": true
     //},
 
-    //"custom/wallchange": {
-    //    "format": "{}",
-    //    "rotate": 0,
-    //    "exec": "echo ; echo 󰆊 switch wallpaper",
-    //    "on-click": "swwwallpaper.sh -n",
-    //    "on-click-right": "swwwallpaper.sh -p",
-    //    "on-click-middle": "sleep 0.1 && swwwallselect.sh",
-    //    "interval" : 86400, // once every day
-    //    "tooltip": true
-    //},
+    "custom/wallchange": {
+        "format": "{}",
+        "rotate": 0,
+        "exec": "echo ; echo 󰆊 switch wallpaper",
+        "on-click": "swwwallpaper.sh -n",
+        "on-click-right": "swwwallpaper.sh -p",
+        "on-click-middle": "sleep 0.1 && swwwallselect.sh",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
 
 	"wlr/taskbar": {
 		"format": "{icon}",
 		"rotate": 0,
 		"icon-size": 18,
-		"icon-theme": "Tela-circle-green",
+		"icon-theme": "Tela-circle-purple",
         "spacing": 0,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
