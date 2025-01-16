@@ -1,6 +1,6 @@
 #!/bin/sh
 
-hyprlandOriginal="/usr/bin/hyprland-original"
+hyprlandbig="/usr/bin/hyprland"
 
 # Tests if the card is NVIDIA, if so, uses the value of the variables
 lspci | grep -qi "vga.*nvidia" && {
@@ -83,4 +83,5 @@ if [ -e /usr/bin/startbiglive ]; then
 fi
 
 # Run the original Hyprland
-exec "$hyprlandOriginal" "$@"
+
+exec "$hyprlandbig" "$@"
