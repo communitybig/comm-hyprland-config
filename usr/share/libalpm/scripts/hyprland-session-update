@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Stop ALL..."
-#hyprlandOriginal="/usr/bin/hyprland-original"
-#hyprlandBin="/usr/bin/Hyprland"
-#wrapperScript="/usr/bin/starthyprland-community"
-#
-## Rename original binary if not already renamed
-#if [ -f "$hyprlandBin" ] && [ ! -f "$hyprlandOriginal" ]; then
-#    mv -f "$hyprlandBin" "$hyprlandOriginal"
-#fi
+hyprlandOriginal="/usr/bin/hyprland-original"
+hyprlandBin="/usr/bin/Hyprland"
+wrapperScript="/usr/bin/starthyprland-community"
 
-# Copy wrapper script to replace Hyprland
-#cp -f "$wrapperScript" "$hyprlandBin"
-#chmod +x "$hyprlandBin"
+# Rename original binary if not already renamed
+if [ -f "$hyprlandBin" ] && [ ! -f "$hyprlandOriginal" ]; then
+   mv -f "$hyprlandBin" "$hyprlandOriginal"
+fi
+
+Copy wrapper script to replace Hyprland
+cp -f "$wrapperScript" "$hyprlandBin"
+chmod +x "$hyprlandBin"
